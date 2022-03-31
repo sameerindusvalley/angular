@@ -1,1 +1,19 @@
-<p>reactive works!</p>
+<div>
+    <h1>reactive form</h1>
+    <!-- ng form working to group a form -->
+    <form [formGroup]="contactForm" class="form" (ngSubmit)="formSubmit(contactForm)">
+        <div class="form-group">
+            <input type="text" formControlName="yourname" placeholder="enter your name" class="form-control" ><br>
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="email" placeholder="enter your email" class="form-control" ><br>
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="mobile" placeholder="enter your mobile" class="form-control" ><br>
+        </div>
+        <div class="form-group">
+            <input type="submit" name="Send"  class="btn-btn-success" ><br>
+        </div>
+    </form>
+   
+</div>

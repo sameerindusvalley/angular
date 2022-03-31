@@ -1,0 +1,28 @@
+<h1>regester-form works!</h1>
+<div>
+
+    <!-- ng form working to group a form -->
+    <form [formGroup]="contactForm" class="form" (ngSubmit)="formSubmit(contactForm.value)">
+        <div class="form-group">
+            <input type="text" formControlName="yourname" placeholder="enter your name" class="form-control"
+            ><br>
+            <span class="error" *ngIf="contactForm.get('yourname')?.invalid &&   contactForm.get('yourname')?.touched">please enter name</span>
+        </div> 
+        <div class="form-group">
+            <input type="text" formControlName="email" placeholder="enter your email" class="form-control" ><br>
+            <span class="error" *ngIf="contactForm.get('email')?.invalid &&   contactForm.get('email')?.touched">please enter email </span>
+       
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="mobile" placeholder="enter your mobile" class="form-control" ><br>
+            <span class="error" *ngIf="contactForm.get('mobile')?.invalid &&   contactForm.get('mobile')?.touched">please enter mobile</span>
+
+        </div>
+        <div class="form-group">
+            <input type="submit" name="Send"  class="btn-btn-success"  ><br> 
+        </div>
+    </form>
+   
+</div>
+
+<!-- [disabled]="contactForm.invalid" -->

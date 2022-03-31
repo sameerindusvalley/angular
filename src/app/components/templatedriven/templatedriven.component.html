@@ -1,6 +1,19 @@
 <div>
-    <h1>template driven orm </h1>
-    <form >
-        <input type="text">
+    <h1>template driven form</h1>
+    <!-- ng form working to group a form -->
+    <form #contactForm="ngForm" class="form" (ngSubmit)="formSubmit(contactForm)">
+        <div class="form-group">
+            <input type="text" name="yourname"  placeholder="enter your name" class="form-control" ngModel><br>
+        </div>
+        <div class="form-group">
+            <input type="text" name="email" placeholder="enter your email" class="form-control" ngModel><br>
+        </div>
+        <div class="form-group">
+            <input type="text" name="mobile" placeholder="enter your mobile" class="form-control" ngModel><br>
+        </div>
+        <div class="form-group">
+            <input type="submit" name="Send"  class="btn-btn-success" ><br>
+        </div>
     </form>
+   
 </div>
