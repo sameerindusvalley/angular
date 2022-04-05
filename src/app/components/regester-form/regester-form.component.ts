@@ -20,15 +20,17 @@ export class RegesterFormComponent implements OnInit {
       mobile:['',[Validators.required,Validators.minLength(10),Validators.maxLength(10)]]
     
     });
+   
   }
   formSubmit(val:any){
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
       
       return; 
-      console.log("sameer" ,val)
+       
 
     }
+    else(console.log("sameer" ,val) )
     // console.log("sam:",val.value)
   }
   // form builder method endr

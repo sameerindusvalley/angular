@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LifeCycleHooksComponent } from './components/life-cycle-hooks/life-cycle-hooks.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { NavbrComponent } from './components/navbr/navbr.component';
+import { PracServiceComponent } from './components/prac-service/prac-service.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { RegesterFormComponent } from './components/regester-form/regester-form.component';
 import { TemplatedrivenComponent } from './components/templatedriven/templatedriven.component';
@@ -17,6 +18,8 @@ const routes: Routes = [
   { path: 'life-cycle-hooks', component:LifeCycleHooksComponent },
   { path: 'login', component:LoginFormComponent },
   { path: 'regester-form', component:RegesterFormComponent },
+  { path: 'prac-service', component:PracServiceComponent },
+
 
 
 

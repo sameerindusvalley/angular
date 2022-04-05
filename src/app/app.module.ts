@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { LifeCycleHooksComponent } from './components/life-cycle-hooks/life-cycle-hooks.component';
 import { RegesterFormComponent } from './components/regester-form/regester-form.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
+import { PracServiceComponent } from './components/prac-service/prac-service.component';
 
 
 
@@ -30,7 +31,8 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     ContactComponent,
     LifeCycleHooksComponent,
     RegesterFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    PracServiceComponent
   ],
   imports: [
     BrowserModule,
